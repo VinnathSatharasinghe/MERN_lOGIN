@@ -1,0 +1,110 @@
+/* Center the content vertically and horizontally */
+.mainx {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style the outer container */
+  .formx {
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Style the inner container */
+  .formx {
+    background-color: purple;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+    width: 60%;
+    height: 80%;
+    
+  }
+  
+  /* Style the form */
+  h3 {
+    font-size: 28px;
+    margin-bottom: 50px;
+  }
+  
+  /* Style form inputs and labels */
+  Form.Label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 35%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+  }
+  
+  /* Style the submit button */
+  Button[type="submit"],
+  Button[type="login"] {
+    width: 30%;
+    padding: 10px;
+    margin: 15px 0;
+    background-color: #007bff; /* Change to your desired button color */
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  /* Change button color on hover */
+  Button[type="submit"]:hover,
+  Button[type="login"]:hover {
+    background-color: #0056b3; /* Change to your desired hover color */
+  }
+
+
+  /* Styles for screens 800px and smaller */
+@media (max-width: 760px) {
+    /* Center the content vertically and horizontally */
+    .mainx {
+      margin-top: -40px;
+    }
+  
+    /* Adjust the width of the inner container */
+    .formx {
+      width: 60%;
+      
+    }
+  }
+  
+  /* Additional styles for even smaller screens, e.g., mobile devices */
+  @media (max-width: 760px) {
+    /* Adjust the width of the inner container */
+    .formx {
+      width: 90%;
+      padding: 10px;
+      margin-top: 100px;
+    }
+  
+    /* Style form inputs and labels for small screens */
+    Form.Label {
+      font-size: 14px;
+      
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      padding: 8px;
+      width: 45%;
+    }
+  
+    /* Style the submit button for small screens */
+    Button[type="submit"],
+    Button[type="login"] {
+      padding: 8px;
+      width: 35%;
+    }
+  }
