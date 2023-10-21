@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: red;
+
+  }
+  
+  .home-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: black;
+    border-radius: 20%;
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 25px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 15px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+  }
+  
+  main {
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 40px 0;
+    font-family: 'Nosifer', sans-serif;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: 'Nosifer', sans-serif;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+    font-family: 'Nosifer', sans-serif;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-family: 'Nosifer', sans-serif;
+  }
+  
+  .cta-button:hover {
+    background-color: red;
+    color: #fff;
+    
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+    
+    
+  }
+  
+  .feature {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid rgb(129, 153, 51);
+    border-radius: 5px;
+    
+  }
+  
+  .feature h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-family: 'Nosifer', sans-serif;
+  }
+
+
+  /* -------------------------------- */
+
+
+header{
+    height: 10vh;
+    line-height: 10vh;
+    font-weight: 500;
+    letter-spacing: 10px;
+    
+}
+
+header .container {
+    padding-top: 15px;
+
+}
+header ul li{
+    margin-left: 45px;
+    margin-top: -15px;
+}
+header ul li a{
+    transition: 0.5s;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    
+}
+
+header ul li a:hover {
+    color:lightslategray;
+} 
+.home-btn {
+    padding: 8px 10px;
+    position: inherit;
+    padding-bottom: 11px;
+    border-radius: 11px;
+    transition: 0.8s all ease;
+    cursor: pointer;
+    font-family: 'Nosifer', sans-serif;
+    
+}
+.home-btn {
+    background: linear-gradient(572deg, black, red);
+    box-shadow: 3px 2px 3px lightcoral, 21px 10px 3px black;
+    
+}
+.home-btn:hover{
+    background-color: black; 
+    color: red;
+    transform: translateY(-5px);
+    
+}
+
+@media (max-width: 760px) {
+
+    header ul {
+        padding: 30px;
+        
+    }
+    .nav-links-mobile {
+        position: absolute;
+        display: block;
+        list-style: none;
+        box-shadow: black 0 20px 100px -60px, black 0 30px 60px -30px;
+        left: 0;
+        top: 0;
+        transition: all 0.5s ease-in-out;
+        width: 60%;
+        height: 100vh;
+        background-color: lightpink;   
+         
+    
+    }
+    header ul li {
+        width: 100%;
+        margin-top: -45px;
+        margin-left: 5px;
+        transition: 0.5s;
+        text-transform: uppercase;
+        
+        
+    }
+
+
+}
+

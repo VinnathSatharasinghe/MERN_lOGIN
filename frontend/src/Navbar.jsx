@@ -15,7 +15,7 @@ function CreativeNavbar() {
           <a href="/login">Login</a>
         </li>
         <li>
-          <a href="/services">Services</a>
+          <a href="/mu">Services</a>
         </li>
         <li>
           <a href="/portfolio">Portfolio</a>

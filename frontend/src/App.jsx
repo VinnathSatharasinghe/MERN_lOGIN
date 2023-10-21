@@ -4,11 +4,13 @@ import Navbar from "./Navbar";
 import Singup from "./singup";
 import LLogin from "./llogin";
 
+import Home from "./Home";
+
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
       <Routes>
+        <Navbar/>
         <Route path="/register" element={<Singup />}></Route>
         <Route path="/login" element={<LLogin />}></Route>
       </Routes>
