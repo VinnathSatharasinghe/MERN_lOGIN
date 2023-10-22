@@ -65,7 +65,6 @@ function singup() {
               onChange={(e) => setPassword(e.target.value)}
             />
           </Form.Group>
-          <br />
 
           <Button variant="primary" type="submit">
             Submit
@@ -73,7 +72,7 @@ function singup() {
         </Form>
 
         <Button variant="primary" type="login">
-          Login
+          <a href="/home">Login</a>
         </Button>
       </div>
     </div>

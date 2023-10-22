@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 700px;
     
   }
   
@@ -34,24 +35,8 @@
   }
   
   /* Style the form */
-  h3 {
-    font-size: 28px;
-    background:url('../pic/pic2.jpg');
-    margin-bottom: 60px;
-    color: aliceblue;
-    width: 35%;
-    margin-top: 30px;
-    margin-left: 290px;
-    border-radius: 35px;
-    background-color: burlywood;
-    border: 3px solid white;
-    box-shadow: 5px 4px 4px 4px black;
-    font-family: 'Nosifer', sans-serif;
-   
-    
-  }
+
   
-  /* Style form inputs and labels */
   Form.Label {
     font-weight: bold;
   }
@@ -64,8 +49,8 @@
     width: 35%;
     padding: 10px;
     margin: 11px;
-    background-color: transparent;
     border-radius: 15px;
+    background-color: transparent;
     border: 2px solid black;
     border-radius: 51px;
     background:url('../pic/pic2.jpg');
@@ -77,8 +62,7 @@
   Button[type="login"]
    {
     font-size: 18px;
-    background:url('../pic/rfr.jpg');
-    margin-bottom: 20px;
+    background:url('../pic/pic2.jpg');
     background-color: transparent;
     width: 20%;
     border-radius: 25px;
@@ -95,6 +79,8 @@
 
   Button[type="submit"]:hover,
   Button[type="login"]:hover {
+    background-color: aqua;
+    color: black;
 
   }
 
@@ -110,23 +96,10 @@
       
     }
 
-    h3 {
-      font-size: 28px;
-      margin-bottom: 60px;
-      width: 25%;
-      margin-top: 30px;
-      margin-left: 248px;
-      border-radius: 25px;
-      border: 2px solid white;
-      box-shadow: 5px 4px 4px 4px black;
-      font-family: 'Nosifer', sans-serif;
-     
-      
-    }
   }
   
 
-  @media (max-width: 760px) {
+  @media (max-width: 800px) {
 
     .formx {
       width: 90%;
@@ -138,6 +111,21 @@
     Form.Label {
       font-size: 14px;
       
+    }
+
+    h4 {
+      font-size: 28px;
+      background:url('../src/pic/pic2.jpg');
+      margin-bottom: 60px;
+      color: aliceblue;
+      width: 35%;
+      margin-top: 30px;
+      margin-left: 220px;
+      border-radius: 35px;
+      border: 3px solid white;
+      box-shadow: 5px 4px 4px 4px black;
+      font-family: 'Nosifer', sans-serif;
+     
     }
   
     input[type="text"],

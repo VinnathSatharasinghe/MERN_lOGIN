@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 function Home() {
   return (
     <div className="tests">
-      <Navbar/>
+      <Navbar />
       <div className="home-page">
         <header>
           <nav>
@@ -26,7 +26,7 @@ function Home() {
               </li>
               <li>
                 <button className="home-btn">
-                  <a href="#resume">RESUME</a>
+                  <a href="/sing">SINGUP</a>
                 </button>
               </li>
               <li>

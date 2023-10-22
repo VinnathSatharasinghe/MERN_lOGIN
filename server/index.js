@@ -18,10 +18,11 @@ app.post("/login", (req, res) => {
       if (user.password === password) {
         res.json("success");
       } else {
-        res.json("error");
-      }
-    } else {
-      res.json("No record existed");
+        res.json("nopass");
+      } 
+      
+    }else{
+      res.json("null");
     }
   });
 });
@@ -35,3 +36,14 @@ app.post("/register", (req, res) => {
 app.listen(3001, () => {
   console.log("Server is Running !!");
 });
+
+//   if (user) {
+//     if (user.password === password) {
+//       res.json("success");
+//     } else {
+//       res.json("error");
+//     }
+//   } else {
+//     res.json("No record existed");
+//   }
+// }

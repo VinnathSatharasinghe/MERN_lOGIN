@@ -1,43 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: black;
     color: #fff;
-    padding: 20px;
+    background-color: black;
+    border-radius: 1px 1px 40px 40px;
+    padding: 7px 0;
+    margin-bottom: 15px;
+    box-shadow: 5px 8px 6px white, 15px 9px 6px black;
+    background: url('./pic/pic2.jpg');
   }
   
   /* Logo styling */
   .logo a {
     color: #fff;
     text-decoration: none;
-    font-size: 24px;
+    font-size:24px;
+    margin-left: 30px;
     font-weight: bold;
     font-family: 'Nosifer', sans-serif;
+    
   }
   
   /* Navigation links */
   .nav-links {
     list-style: none;
     display: flex;
-    
+    font-weight: 800;  
   }
+
   
   .nav-links li {
-    margin: 0 15px;
+    margin: 4px 15px;
   }
   
   .nav-links li a {
     text-decoration: none;
-    color: #fff;
-    font-size: 16px;
+    color: whitesmoke;
+    font-size: 18px;
     
   }
   
   /* Hover effect on links */
   .nav-links li a:hover {
-    color: yellow;
+    color: orangered;
     transition: color 0.3s ease-in-out;
   }

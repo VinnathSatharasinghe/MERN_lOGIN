@@ -4,10 +4,17 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Nav from "../Navbar";
-import './login.css'
+import "./login.css";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
+// let btnClear = document.querySelector('Button');
+// let inputs = document.querySelector('input');
+
+// btnClear.addEventListener('click', () => {
+//   inputs.forEach(input => input.type = 'password');
+// })
 
 const notify = () => {
   toast.success("🦄 Wow so easy!", {
@@ -25,7 +32,7 @@ const notify = () => {
 function Login() {
   const [name, setName] = useState();
   const [password, setPassword] = useState();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -34,13 +41,15 @@ function Login() {
       .then((result) => {
         console.log(result);
 
-        if (result.data === "success") {
+        if (result.data === "null") {
           // navigate("./singup.jsx");
+          toast.error("Login Failed. No record existed.", { autoClose: 5000 });
+        } else if (result.data === "success") {
           toast.success("Login successful!", { autoClose: 5000 });
-        } else if (result.data === "error") {
-          toast.error("Login Failed. Please Check The Password.");
+        } else if (result.data === "nopass") {
+          toast.error("Login Failed. Incorrect Password");
         } else {
-          toast.error("Login failed. No record existed.");
+          toast.error("Login Failed. No record existed.");
         }
       })
       .catch((err) => console.log(err));
@@ -48,18 +57,18 @@ function Login() {
 
   return (
     <div>
-      <Nav/>
+      <Nav />
       <div className="mainx">
         <div className="formx">
           <Form onSubmit={handleSubmit}>
-            <h3>Login Now</h3>
+            <h4>Login Now</h4>
             <Form.Group className="mb-3" controlId="formBasicUsername">
               <Form.Label>Username</Form.Label>
               <br />
               <input
                 type="text"
                 placeholder="Username"
-                autoComplete="off "
+                autoComplete="off"
                 name="name"
                 onChange={(e) => setName(e.target.value)}
               />
@@ -71,9 +80,9 @@ function Login() {
               <br />
               <input
                 type="password"
-                autoComplete="off"
                 placeholder="Enter Password"
                 name="password"
+                autoComplete="off"
                 onChange={(e) => setPassword(e.target.value)}
               />
             </Form.Group>
@@ -97,7 +106,7 @@ function Login() {
           />
 
           <Button variant="primary" type="login">
-          <a href="/home">Home</a>
+            <a href="/home">Home</a>
           </Button>
         </div>
       </div>
@@ -106,4 +115,3 @@ function Login() {
 }
 
 export default Login;
-
