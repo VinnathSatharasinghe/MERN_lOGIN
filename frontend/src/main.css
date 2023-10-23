@@ -48,22 +48,21 @@ h1 {
 
 h3 {
   font-size: 28px;
-  background:url('../src/pic/pic2.jpg');
   margin-bottom: 60px;
-  color: aliceblue;
+  color: whitesmoke;
   width: 35%;
   margin-top: 30px;
-  margin-left: 265px;
+  margin-left: 215px;
   border-radius: 35px;
   border: 3px solid white;
   box-shadow: 5px 4px 4px 4px black;
   font-family: 'Nosifer', sans-serif;
+  background:url('./pic/gh.jpg')
  
 }
 
 h4 {
   font-size: 28px;
-  background:url('../src/pic/pic2.jpg');
   margin-bottom: 60px;
   color: aliceblue;
   width: 35%;
@@ -73,6 +72,7 @@ h4 {
   border: 3px solid white;
   box-shadow: 5px 4px 4px 4px black;
   font-family: 'Nosifer', sans-serif;
+  background:url('./pic/gh.jpg')
  
 }
 
@@ -86,7 +86,9 @@ h4 {
   background-color: white;
   cursor: pointer;
   transition: border-color 0.25s;
+  background: url('./pic/gh.jpg');
 } */
+
 /* button:hover {
   border-color: #646cff;
 } */

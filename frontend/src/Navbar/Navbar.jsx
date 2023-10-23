@@ -5,7 +5,7 @@ function CreativeNavbar() {
   return (
     <nav className="navbar">
       <div className="logo">
-        <a href="/">My Website</a>
+        <a href="/">W I N N Y - C A F E</a>
       </div>
       <ul className="nav-links">
         <li>

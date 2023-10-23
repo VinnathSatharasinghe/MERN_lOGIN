@@ -6,7 +6,7 @@ import "./main.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // import Navbar from "./Navbar"
-import Home from "./Home.jsx";
+import Home from "./Home/Home";
 import Login from "./Login/Login"
 import Singup from "./singup"
 

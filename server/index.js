@@ -37,13 +37,6 @@ app.listen(3001, () => {
   console.log("Server is Running !!");
 });
 
-//   if (user) {
-//     if (user.password === password) {
-//       res.json("success");
-//     } else {
-//       res.json("error");
-//     }
-//   } else {
-//     res.json("No record existed");
-//   }
-// }
+
+
+

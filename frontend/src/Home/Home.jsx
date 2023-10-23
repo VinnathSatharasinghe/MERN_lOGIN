@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.css";
-import Navbar from "./Navbar";
+import Navbar from "../Navbar/Navbar";
 
 function Home() {
   return (
@@ -10,10 +10,6 @@ function Home() {
         <header>
           <nav>
             <ul>
-              {/* <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li> */}
-
               <li>
                 <button className="home-btn">
                   <a href="#home">Home</a>
@@ -78,7 +74,7 @@ function Home() {
           </section>
         </main>
         <footer>
-          <p>&copy; {new Date().getFullYear()} Your Company</p>
+          <p>&copy; {new Date().getFullYear()} Winny Cafe</p>
         </footer>
       </div>
     </div>

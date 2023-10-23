@@ -1,29 +1,32 @@
 /* Center the content vertically and horizontally */
-.d-flex.justify-content-center.align-items-center {
+.main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background:url('../pic/pic2.jpg');
+    background:url('./pic/pic2.jpg');
     
   }
+
+  .text-danger {
+    font-size: 20px;
+    margin-top: 10px;
+  }
   
 
-  .bg-secondary.vh-100 {
-  
+  .sub {
     height: 100vh;
     margin: 0;
+    
   }
 
-  
- 
-  .bg-white.p-3.rounded.w-25 {
+  .sub {
     background:url('../src/pic/pic2.jpg');
     text-align: center;
-    margin-top: 20px;
+    margin-top: -10px;
     padding: 10px;
-    width: 55%;
-    height: 90%;
+    width: 45%;
+    height: 85%;
     border: 4px solid black;
     border-radius: 199px;
     
@@ -46,68 +49,70 @@
     background:url('../src//pic/pic2.jpg');
     margin-bottom: 20px;
     background-color: transparent;
+    margin-bottom: -8px;
     width: 20%;
     border-radius: 25px;
     color: whitesmoke;
-    border: 2px solid black;
     margin-top: 40px;
     box-shadow: 5px 4px 4px 4px whi;
     font-weight: 500;
     font-family: 'Nosifer', sans-serif;
     box-shadow: 1px 2px 9px 5px white;
+    background:url('./pic/gh.jpg')
+
     
   }
   
   input[type="text"],
   input[type="email"],
   input[type="password"] {
-    width: 35%;
+    width: 45%;
     padding: 10px;
     margin: 11px;
     background-color: transparent;
+    margin-bottom: -50px;
     border-radius: 15px;
     border: 2px solid black;
     border-radius: 51px;
-    background:url('../src/pic/pic2.jpg');
     box-shadow: 1px 2px 9px 5px white;
+    background:url('./pic/gh.jpg')
   }
   
 
-@media (max-width: 760px) {
+@media (max-width: 800px) {
     /* Center the content vertically and horizontally */
-    .d-flex.justify-content-center.align-items-center {
+    .mainx {
       margin-top: -40px;
       margin-top: -1px;
-    }
-  
-    /* Adjust the width of the inner container */
-    .bg-white.p-3.rounded.w-25 {
-      width: 60%;
       
+    }
+
+
+    .sub {
+      width: 80%;
+      height: 80%;
+      padding: 10px;
+      margin-top: -20px;
     }
 
     h3 {
 
       margin-bottom: 30px;
-      width: 35%;
-      margin-left: 220px;
+      width: 65%;
+      margin-left: 105px;
       border-radius: 35px;
       border: 3px solid white;
       box-shadow: 5px 4px 4px 4px black;
       font-family: 'Nosifer', sans-serif;
+      background:url('./pic/gh.jpg')
     }
     
   }
   
   /* Additional styles for even smaller screens, e.g., mobile devices */
-  @media (max-width: 760px) {
+  @media (max-width: 800px) {
     /* Adjust the width of the inner container */
-    .bg-white.p-3.rounded.w-25 {
-      width: 90%;
-      height: 90%;
-      padding: 10px;
-      margin-top: 10px;
-    }
+
   
     /* Style form inputs and labels for small screens */
     Form.Label {
@@ -125,7 +130,8 @@
     /* Style the submit button for small screens */
     Button[type="submit"],
     Button[type="login"] {
-      padding: 4px;
-      width: 25%;
+      padding: 1px;
+      width: 20%;
+      margin-bottom: 1px;
     }
   }

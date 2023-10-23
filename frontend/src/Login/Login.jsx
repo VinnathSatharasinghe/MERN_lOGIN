@@ -2,19 +2,12 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
-import Nav from "../Navbar";
+// import { useNavigate } from "react-router-dom";
+import Nav from "../Navbar/Navbar";
 import "./login.css";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
-// let btnClear = document.querySelector('Button');
-// let inputs = document.querySelector('input');
-
-// btnClear.addEventListener('click', () => {
-//   inputs.forEach(input => input.type = 'password');
-// })
 
 const notify = () => {
   toast.success("🦄 Wow so easy!", {
@@ -36,6 +29,23 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const notifySuccess = (message) => {
+      toast.success(message, {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+    };
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+    };
     axios
       .post("http://localhost:3001/login", { name, password })
       .then((result) => {
@@ -70,10 +80,10 @@ function Login() {
                 placeholder="Username"
                 autoComplete="off"
                 name="name"
+                defaultValue={""}
                 onChange={(e) => setName(e.target.value)}
               />
             </Form.Group>
-            <br />
             <br />
             <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Label>Password</Form.Label>
@@ -83,6 +93,7 @@ function Login() {
                 placeholder="Enter Password"
                 name="password"
                 autoComplete="off"
+                defaultValue={""}
                 onChange={(e) => setPassword(e.target.value)}
               />
             </Form.Group>
