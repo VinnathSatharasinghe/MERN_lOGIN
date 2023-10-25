@@ -136,10 +136,4 @@
       width: 45%;
     }
   
-    /* Style the submit button for small screens */
-    Button[type="submit"],
-    Button[type="login"] {
-      padding: 8px;
-      width: 35%;
-    }
   }
