@@ -11,7 +11,7 @@
     background: url('../pic/pic2.jpg');
   }
   
-  /* Logo styling */
+
   .logo a {
     color: #fff;
     text-decoration: none;
@@ -21,8 +21,7 @@
     font-family: 'Nosifer', sans-serif;
     
   }
-  
-  /* Navigation links */
+
   .nav-links {
     list-style: none;
     display: flex;
@@ -41,7 +40,7 @@
     
   }
   
-  /* Hover effect on links */
+
   .nav-links li a:hover {
     color: orangered;
     transition: color 0.3s ease-in-out;

@@ -73,11 +73,11 @@ function Login() {
           <Form onSubmit={handleSubmit}>
             <h4>Login Now</h4>
             <Form.Group className="mb-3" controlId="formBasicUsername">
-              <Form.Label>Username</Form.Label>
+              {/* <Form.Label>Username</Form.Label> */}
               <br />
               <input
                 type="text"
-                placeholder="Username"
+                placeholder="Enter Username"
                 autoComplete="off"
                 name="name"
                 defaultValue={""}
@@ -86,7 +86,7 @@ function Login() {
             </Form.Group>
             <br />
             <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
+              {/* <Form.Label>Password</Form.Label> */}
               <br />
               <input
                 type="password"

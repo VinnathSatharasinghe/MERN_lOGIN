@@ -5,17 +5,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    height: 650px;
     
   }
   
-  /* Style the outer container */
+
   .formx {
     height: 100vh;
     margin: 0;
   }
   
-  /* Style the inner container */
+
   .formx {
     background-color: transparent;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -34,15 +34,19 @@
     background:url('../pic/pic2.jpg');
   }
   
-  /* Style the form */
-
-  
-  Form.Label {
+  /* Form.Label {
     font-weight: bold;
+  } */
+
+  input[type="password"]::placeholder,
+  input[type="text"]::placeholder {
+    font-weight: 700;
+    padding: 30px;
+    color: wheat;
+    
   }
 
 
-  
   input[type="text"],
   input[type="email"],
   input[type="password"] {
@@ -53,7 +57,7 @@
     background-color: transparent;
     border: 2px solid black;
     border-radius: 51px;
-    background:url('../pic/pic2.jpg');
+    background:url('../pic/gh.jpg');
     box-shadow: 1px 2px 9px 5px white;
     
   }
@@ -79,32 +83,25 @@
 
   Button[type="submit"]:hover,
   Button[type="login"]:hover {
-    background-color: aqua;
-    color: black;
+    color: orange;
 
   }
 
-
-@media (max-width: 760px) {
-
-    .mainx {
-      margin-top: -40px;
-    }
-
-    .formx {
-      width: 60%;
-      
-    }
-
-  }
   
-
   @media (max-width: 800px) {
 
+    .mainx {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     .formx {
-      width: 90%;
+      width: 700px;
+      height: 500px;
       padding: 10px;
-      margin-top: -50px;
+      margin-top: 50px;
       background:url('../pic/pic2.jpg');
     }
   
@@ -118,22 +115,18 @@
       background:url('../src/pic/pic2.jpg');
       margin-bottom: 40px;
       color: aliceblue;
-      width: 35%;
+      width: 35%; 
       margin-top: 30px;
-      margin-left: 200px;
+      margin-left: 220px;
       border-radius: 35px;
       border: 3px solid white;
       box-shadow: 5px 4px 4px 4px black;
       font-family: 'Nosifer', sans-serif;
-      background:url('../pic/gh.jpg')
-     
+      background:url('../pic/gh.jpg');
+
     }
-  
-    input[type="text"],
-    input[type="email"],
-    input[type="password"] {
-      padding: 8px;
-      width: 45%;
-    }
-  
+
+
   }
+  
+

@@ -118,29 +118,29 @@ function singup() {
             <h3>Register</h3>
 
             <Form.Group className="mb-3" controlId="formBasicUsername">
-              <Form.Label>Username</Form.Label>
+              {/* <Form.Label>Username</Form.Label> */}
               {/* <label htmlFor="name">Username</label> */}
               <br />
               <input
                 id="name"
-                type="text"
-                placeholder="Username"
+                type="text1"
+                placeholder="Enter Username"
                 autoComplete="off "
                 name="name"
                 value={name}
-                defaultValue={"winny"}
+                defaultValue={""}
                 onChange={(e) => setName(e.target.value)}
               />
               <div className="text-danger">{errors.name}</div>
             </Form.Group>
             <br />
             <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
+              {/* <Form.Label>Email address</Form.Label> */}
               {/* <label htmlFor="email">Email address</label> */}
               <br />
               <input
                 id="email"
-                type="email"
+                type="email1"
                 value={email}
                 placeholder="Enter Email"
                 name="email"
@@ -155,11 +155,11 @@ function singup() {
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
               {/* <Form.Label>Password</Form.Label> */}
-              <label htmlFor="password">Password</label>
+              {/* <label htmlFor="password">Password</label> */}
               <br />
               <input
                 id="password"
-                type="password"
+                type="password1"
                 placeholder="Enter Password"
                 name="password"
                 value={password}

@@ -9,7 +9,7 @@ function CreativeNavbar() {
       </div>
       <ul className="nav-links">
         <li>
-          <a href="/register">Sing-up</a>
+          <a href="/curd">CURD</a>
         </li>
         <li>
           <a href="/login">Login</a>

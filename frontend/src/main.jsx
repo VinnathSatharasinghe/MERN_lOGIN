@@ -9,6 +9,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Home/Home";
 import Login from "./Login/Login"
 import Singup from "./singup"
+import All from "./CRUD/All"
 
 
 const router = createBrowserRouter([
@@ -29,6 +30,11 @@ const router = createBrowserRouter([
     path: "/sing",
     element: <Singup />,
   },
+  {
+    path: "/curd",
+    element: <All />,
+  },
+  
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
